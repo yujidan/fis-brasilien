@@ -1,0 +1,777 @@
+
+/*.tx-bbw-contacts span {
+    font-size: 14px;
+    color: #9e9e96;
+}*/
+.tx-bbw-contacts .mix a {
+    color: #606057;
+}
+.tx-bbw-contacts .resulttext, .tx-bbw-contacts .resultimage {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.tx-bbw-contacts .resulttext.name,
+.tx-bbw-contacts .resulttext.regions,
+.tx-bbw-contacts .resulttext.phonelist{width:160px;padding-right: 10px;}
+.tx-bbw-contacts .resulttext.focus{width:320px;padding-right: 10px;}
+.tx-bbw-contacts .resulttext.mail{width:220px}
+
+.tx-bbw-contacts .resultimage {
+    width: 80px;
+    padding-right: 20px;
+}
+
+.tx-bbw-contacts .color-red {
+    color: #e60026;
+    font-weight:900;
+    -webkit-transition: color 0.3s ease-out 0s;
+    -moz-transition: color 0.3s ease-out 0s;
+    -o-transition: color 0.3s ease-out 0s;
+    transition: color 0.3s ease-out 0s;
+}
+.tx-bbw-contacts .testimonials-v6 .color-red {
+    color: #e60026;
+    font-weight:400;
+    font-size: 16px;
+    line-height:22px;
+    -webkit-transition: color 0.3s ease-out 0s;
+    -moz-transition: color 0.3s ease-out 0s;
+    -o-transition: color 0.3s ease-out 0s;
+    transition: color 0.3s ease-out 0s;
+}
+
+.tx-bbw-contacts .color-red a:hover,
+.tx-bbw-contacts .color-red a:hover:before{
+    text-decoration: none;
+    color: #2e2e2e;
+    -webkit-transition: color 0s ease-out 0s;
+    -moz-transition: color 0s ease-out 0s;
+    -o-transition: color 0s ease-out 0s;
+    transition: color 0s ease-out 0s;
+}
+.tx-bbw-contacts .color-red a.mail:hover:before {
+    filter: grayscale(95%);
+    -webkit-filter: grayscale(95%);
+}
+
+.tx-bbw-contacts a.mail:before {
+    content: url(../Icons/icon-letter.svg);
+    display: inline-block;
+    width: 15px;
+    margin-right: 8px;
+    position: relative;
+    top: 0;
+}
+
+/*.tx-bbw-contacts a.phone-noicon {
+    color: #606057;
+}*/
+.tx-bbw-contacts .color-red a{
+    cursor: pointer;
+}
+.tx-bbw-contacts a.phone-noicon,
+.tx-bbw-contacts a.phone {
+    cursor: text;
+    display: inline-block;
+    text-decoration: none;
+    height:20px;
+}
+.tx-bbw-contacts a.phone:before {
+    content: url(../Icons/icon_phone.svg);
+    display: inline-block;
+    width: 10px;
+    margin-right: 8px;
+    position: relative;
+    top: 0;
+    height:20px;
+}
+.tx-bbw-contacts a.phone:hover,
+.tx-bbw-contacts a.phone:hover:before {
+    color:#e60026;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.contact-select {
+    margin-top: 10px;
+    float: right;
+}
+
+.contact-select label {
+    color: #606057;
+    font-size:14px;
+    font-weight:400;
+    margin-right:15px;
+}
+
+.contact-select .selectRegion {
+    margin-right: 50px;
+}
+
+.contact-select select {
+    color:#2e2e2e;
+    font-size: 14px;
+    padding: 5px 10px;
+    outline: 0;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #e2e2e0;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+
+    border: solid 1px rgb(169, 169, 169);
+}
+select::-ms-expand { display: inline-block;}
+
+    /*--------------------------------------------------
+        [18. Flat Testimonials]
+    ----------------------------------------------------*/
+.flat-testimonials {
+    padding: 34px 0;
+    background-color: transparent;
+    margin-left: 0;
+}
+#page-1 .flat-testimonials {
+    padding: 34px 0;
+}
+
+.flat-testimonials .flat-testimonials-in {
+    padding: 30px;
+    text-align: center;
+    background: transparent;
+}
+.multiple .flat-testimonials {
+    margin-left: 0px;
+}
+
+#page-1 .flat-testimonials .flat-testimonials-in {
+    padding: 0px;
+    text-align: center;
+    background: transparent;
+}
+
+.flat-testimonials .flat-testimonials-in img {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto 20px;
+}
+#page-1 .flat-testimonials .flat-testimonials-in img {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 25px;
+}
+.multiple .flat-testimonials .flat-testimonials-in img {
+    width: 225px;
+    height: 225px;
+    margin: 0 auto 25px;
+}
+
+.tx-bbw-contacts h3,
+.flat-testimonials .flat-testimonials-in h3,
+.tx-bbw-contacts h3 a,
+.flat-testimonials .flat-testimonials-in h3 a{
+    color:#2e2e2e;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 0;
+    text-transform: none;
+    -webkit-transition: color 0.3s ease-out 0s;
+    -moz-transition: color 0.3s ease-out 0s;
+    -o-transition: color 0.3s ease-out 0s;
+    transition: color 0.3s ease-out 0s;
+}
+
+
+.tx-bbw-contacts h3 a:hover,
+.flat-testimonials .flat-testimonials-in h3 a:hover {
+    color:#e60026;
+    -webkit-transition: color 0s ease-out 0s;
+    -moz-transition: color 0s ease-out 0s;
+    -o-transition: color 0s ease-out 0s;
+    transition: color 0s ease-out 0s;
+}
+
+.flat-testimonials .flat-testimonials-in span {
+    display: block;
+    margin-bottom: 0px;
+    color:#9e9e96;
+}
+
+.flat-testimonials .flat-testimonials-in p {
+/*    color: #fff;
+    font-weight: 200;*/
+    position: relative;
+}
+
+.flat-testimonials .flat-testimonials-in p:before,
+.flat-testimonials .flat-testimonials-in p:after {
+    top: 5px;
+/*    font-size: 22px;*/
+    line-height: 10px;
+    position: relative;
+}
+/*
+
+.flat-testimonials .flat-testimonials-in p:before {
+    content: "“";
+    padding-right: 5px;
+}
+
+.flat-testimonials .flat-testimonials-in p:after {
+    content: "”";
+    padding-left: 5px;
+}*/
+
+/*Testimonials v6
+------------------------------------*/
+.testimonials-v6 {
+    font-size: 16px !important;
+}
+.testimonials-v6 .breadcrumb {
+    margin-bottom:0;
+}
+.testimonials-v6 h3 {
+    color:#2e2e2e;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 0;
+    text-transform: none;
+}
+
+
+.testimonials-v6.testimonials-wrap {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.testimonials-v6 .testimonials-info {
+    padding: 20px;
+    background: transparent;
+    border-bottom: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.testimonials-v6 .testimonials-info:hover {
+    border-color: transparent;
+}
+
+.testimonials-v6 .testimonials-info img {
+    float: left;
+    width: 220px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.testimonials-v6 .testimonials-desc {
+    overflow: hidden;
+}
+
+.testimonials-v6 .testimonials-desc p {
+    margin-bottom: 0;
+}
+
+.testimonials-v6 .testimonials-desc strong,
+.testimonials-v6 .testimonials-desc span {
+    color: #555;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .testimonials-v6 .testimonials-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+#js-results .mix{
+    display: none;
+    padding:10px 0;
+    width: 100%;
+    border-bottom: 1px solid #dededc;
+    margin-top: -5px;
+}
+
+#js-results .mix:hover {
+    background: #DADAD8;
+    -webkit-transition: background 0s ease-out 0s;
+    -moz-transition: background 0s ease-out 0s;
+    -o-transition: background 0s ease-out 0s;
+    transition: background 0s ease-out 0s;
+}
+#SortContainer > div:nth-child(2),
+#js-results .mix:first-child {
+    margin-top: 0;
+}
+
+#js-results .resulttext {
+    padding-top: 9px;
+}
+
+#js-results .gridhead {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px 0px;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #606057;
+}
+
+
+.control.active {
+    cursor: pointer;
+    color: #e60026;
+}
+
+.control {
+    cursor: pointer;
+}
+
+/*.control.desc:after {
+    content: " ";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #e60026;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+
+.control.asc:after {
+    content: " ";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid #e60026;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}*/
+
+.control.desc:after {
+    content: " ";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #9e9e96;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+
+.control.asc:after {
+    content: " ";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid #9e9e96;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+.control.desc.active:after {
+    border-top: 6px solid #e60026;
+}
+
+.control.asc.active:after {
+    border-bottom: 6px solid #e60026;
+}
+.tx-bbw-contacts .position {
+    margin-bottom: 20px;
+}
+.tx-bbw-contacts .addressblock {
+    margin-top: 20px;
+}
+
+.resultsgrid {
+/*    width: 100%;*/
+    font-size: 14px;
+}
+
+.tx-bbw-contacts .container.related {
+    margin-top: 125px;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    float: left;
+    margin: 0;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+span.region, span.name {
+    width:75%;
+    display: block;
+}
+
+/*************
+  Bootstrap theme
+ *************/
+/* jQuery Bootstrap Theme */
+.tablesorter-bootstrap {
+    width: 100%;
+    font-size: 14px;
+}
+.tablesorter-bootstrap thead th,
+.tablesorter-bootstrap thead td,
+.tablesorter-bootstrap tfoot th,
+.tablesorter-bootstrap tfoot td {
+    font-size: 16px;
+    font-weight: 900;
+
+    padding: 10px 0px;
+    margin: 0 0 18px;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #606057;
+}
+
+.tablesorter-bootstrap .tablesorter-header {
+    cursor: pointer;
+}
+.tablesorter-bootstrap .sorter-false {
+    cursor: default;
+}
+
+.tablesorter-bootstrap .tablesorter-header.sorter-false i.tablesorter-icon {
+    display: none;
+}
+
+.tablesorter-bootstrap .tablesorter-header-inner {
+    position: relative;
+    padding: 0;
+}
+.tablesorter-bootstrap .sorter-false .tablesorter-header-inner {
+    padding: 0px;
+}
+
+/* bootstrap uses <i> for icons */
+.tablesorter-bootstrap .tablesorter-header i.tablesorter-icon {
+    font-size: 11px;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    margin-top: -7px; /* half the icon height; older IE doesn't like this */
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    line-height: 14px;
+    display: inline-block;
+}
+
+/* black unsorted icon */
+.tablesorter-bootstrap .bootstrap-icon-unsorted {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAA20lEQVR4AWJABpKSkoxALCstLb0aUAsZaCAMhVEY6B0amx8YZWDDEDSBa2AGe7XeIiAAClYwVGBvsAcIllsf/mvcC9DgOOd8h90fxWvngVEUbZIkuWRZZlE8eQjcisgZMM9zi+LJ6ZfwegmWZflZDugdHMfxTcGqql7TNBlUB/QObtv2VBSFrev6OY7jngzFk9OT/fn73fWYpqnlXNyXDMWT0zuYx/Bvel9ej+LJ6R08DMOu67q7DkTkrSA5vYPneV71fX/QASdTkJwezhs0TfMARn0wMDDGXEPgF4oijqwM5YjNAAAAAElFTkSuQmCC);
+}
+
+.tablesorter-headerAsc .tablesorter-header-inner:after{
+    content: " ";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #e60026;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+.tablesorter-headerDesc .tablesorter-header-inner:after{
+    content: " ";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid #e60026;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+
+.tablesorter-headerAsc,
+.tablesorter-headerDesc{
+    color: #e60026
+}
+
+/* white unsorted icon */
+.tablesorter-bootstrap .icon-white.bootstrap-icon-unsorted {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAe0lEQVR4AbXQoRWDMBiF0Sh2QLAAQ8SxJGugWSA6A2STW1PxTsnB9cnkfuYvv8OGC1t5G3Y0QMP+Bm857keAdQIzWBP3+Bw4MADQE18B6/etRnCV/w9nnGuLezfAmXhABGtAGIkruvk6auIFRwQJDywllsEAjCecB20GP59BQQ+gtlRLAAAAAElFTkSuQmCC);
+}
+
+/* since bootstrap (table-striped) uses nth-child(), we just use this to add a zebra stripe color */
+.tablesorter-bootstrap > tbody > tr.odd > td,
+.tablesorter-bootstrap > tbody > tr.tablesorter-hasChildRow.odd:hover ~ tr.tablesorter-hasChildRow.odd ~ .tablesorter-childRow.odd > td {
+    background-color: #f9f9f9;
+}
+.tablesorter-bootstrap > tbody > tr.hover > td,
+.tablesorter-bootstrap > tbody > tr.odd:hover > td,
+.tablesorter-bootstrap > tbody > tr.even:hover > td,
+.tablesorter-bootstrap > tbody > tr.tablesorter-hasChildRow.odd:hover ~ .tablesorter-childRow.odd > td,
+.tablesorter-bootstrap > tbody > tr.tablesorter-hasChildRow.even:hover ~ .tablesorter-childRow.even > td {
+    background-color: #f5f5f5;
+}
+.tablesorter-bootstrap > tbody > tr.even > td,
+.tablesorter-bootstrap > tbody > tr.tablesorter-hasChildRow.even:hover ~ tr.tablesorter-hasChildRow.even ~ .tablesorter-childRow.even > td {
+    background-color: #fff;
+}
+
+/* processing icon */
+.tablesorter-bootstrap .tablesorter-processing {
+    background-image: url('data:image/gif;base64,R0lGODlhFAAUAKEAAO7u7lpaWgAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQBCgACACwAAAAAFAAUAAACQZRvoIDtu1wLQUAlqKTVxqwhXIiBnDg6Y4eyx4lKW5XK7wrLeK3vbq8J2W4T4e1nMhpWrZCTt3xKZ8kgsggdJmUFACH5BAEKAAIALAcAAAALAAcAAAIUVB6ii7jajgCAuUmtovxtXnmdUAAAIfkEAQoAAgAsDQACAAcACwAAAhRUIpmHy/3gUVQAQO9NetuugCFWAAAh+QQBCgACACwNAAcABwALAAACE5QVcZjKbVo6ck2AF95m5/6BSwEAIfkEAQoAAgAsBwANAAsABwAAAhOUH3kr6QaAcSrGWe1VQl+mMUIBACH5BAEKAAIALAIADQALAAcAAAIUlICmh7ncTAgqijkruDiv7n2YUAAAIfkEAQoAAgAsAAAHAAcACwAAAhQUIGmHyedehIoqFXLKfPOAaZdWAAAh+QQFCgACACwAAAIABwALAAACFJQFcJiXb15zLYRl7cla8OtlGGgUADs=');
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* caption */
+.caption {
+    background-color: #fff;
+}
+
+/* filter widget */
+.tablesorter-bootstrap .tablesorter-filter-row input.tablesorter-filter,
+.tablesorter-bootstrap .tablesorter-filter-row select.tablesorter-filter {
+    width: 98%;
+    margin: 0;
+    padding: 4px 6px;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: height 0.1s ease;
+    -moz-transition: height 0.1s ease;
+    -o-transition: height 0.1s ease;
+    transition: height 0.1s ease;
+}
+.tablesorter-bootstrap .tablesorter-filter-row .tablesorter-filter.disabled {
+    background-color: #eee;
+    color: #555;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    box-sizing: border-box;
+    transition: height 0.1s ease;
+}
+.tablesorter-bootstrap .tablesorter-filter-row {
+    background-color: #efefef;
+}
+.tablesorter-bootstrap .tablesorter-filter-row td {
+    background-color: #efefef;
+    line-height: normal;
+    text-align: center;
+    padding: 4px 6px;
+    vertical-align: middle;
+    -webkit-transition: line-height 0.1s ease;
+    -moz-transition: line-height 0.1s ease;
+    -o-transition: line-height 0.1s ease;
+    transition: line-height 0.1s ease;
+}
+/* hidden filter row */
+.tablesorter-bootstrap .tablesorter-filter-row.hideme td {
+    padding: 2px; /* change this to modify the thickness of the closed border row */
+    margin: 0;
+    line-height: 0;
+}
+.tablesorter-bootstrap .tablesorter-filter-row.hideme * {
+    height: 1px;
+    min-height: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    /* don't use visibility: hidden because it disables tabbing */
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+/* rows hidden by filtering (needed for child rows) */
+.tablesorter .filtered {
+    display: none;
+}
+
+/* pager plugin */
+.tablesorter-bootstrap .tablesorter-pager select {
+    padding: 4px 6px;
+}
+.tablesorter-bootstrap .tablesorter-pager .pagedisplay {
+    border: 0;
+}
+/* tfoot i for pager controls */
+.tablesorter-bootstrap tfoot i {
+    font-size: 11px;
+}
+
+/* ajax error row */
+.tablesorter .tablesorter-errorRow td {
+    text-align: center;
+    cursor: pointer;
+    background-color: #e6bf99;
+}
+@media (max-width: 599px) {
+    .tx-bbw-contacts .container.margin-bottom-40 {
+        margin-bottom:0
+    }
+
+    .multiple .flat-testimonials .flat-testimonials-in img {
+        width: 152px;
+        height: 152px;
+        margin: 0 auto 20px;
+    }
+
+    .testimonials-v6 .testimonials-info img {
+        height:220px;
+        margin: 25px auto 0 auto;
+    }
+
+    .testimonials-v6 .testimonials-info {
+        padding: 0 20px;
+    }
+
+    .contact-select select,
+    .contact-select .selectRegion {
+        float: left;
+        margin-right: 0;
+    }
+    fieldset {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mobileflex .flat-testimonials {
+        margin-left: 0;
+        padding:0;
+    }
+
+    .flat-testimonials {
+        padding:20px 0 30px 0;
+        background-color: transparent;
+        margin-left: 0;
+        position: relative;
+        left: 0;
+    }
+
+    .tx-bbw-contacts .resulttext.name, .tx-bbw-contacts .resulttext.regions, .tx-bbw-contacts .resulttext.focus, .tx-bbw-contacts .resulttext.phonelist {
+        width: 75%;
+    }
+    #js-results .phonelist, #js-results .mail {
+        float: left;
+        width: 80%;
+        clear:both;
+    }
+    #js-results .mail,
+    #js-results .phonelist {
+        margin-left: 80px;
+    }
+/*    #js-results .mail {
+        margin-left: 0;
+        text-align: right;
+    }*/
+
+    span.name,
+    span.name a{
+        font-weight:900;
+        color: #2e2e2e;
+    }
+
+
+}
+
+@media (max-width:899px) {
+
+    #js-results .gridhead {
+        display:none;
+    }
+    #SortContainer {
+        padding:0;
+    }
+    .resultimage {
+        float: left;
+        width: 20%;
+        padding: 0;
+    }
+    #js-results .resulttext {
+        padding: 0;
+        font-size:15px;
+    }
+    #js-results .phonelist,
+    #js-results .mail {
+        float:left;
+    }
+    #js-results .phonelist, #js-results .mail {
+        clear: both ;
+        margin-left: 80px;
+    }
+
+    .contact-select label {
+        font-size:15px;
+        float:left;
+    }
+
+    .flat-testimonials .flat-testimonials-in {
+        padding: 30px 0;
+        margin-bottom: 0;
+    }
+
+    .tx-bbw-contacts a.phone-noicon,
+    .tx-bbw-contacts .mail a{
+        /*font-weight:900;*/
+        color:#e60026;
+    }
+    .tx-bbw-contacts #SortContainer a.phone-noicon,
+    .tx-bbw-contacts #SortContainer .mail a{
+        font-weight:900;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .multiple .flat-testimonials .flat-testimonials-in img {
+        width: 159px;
+        height: 159px;
+        margin: 0 auto 20px;
+    }
+    .flat-testimonials {
+        padding: 0;
+        background-color: transparent;
+        margin-left: 20px;
+        position: relative;
+        left: 15px;
+    }
+
+    #page-1 .flat-testimonials {
+        left:0
+    }
+
+    span.name,
+    span.name a{
+        font-weight:400;
+        color: #2e2e2e;
+        font-size:15px;
+    }
+    .tx-bbw-contacts a.phone-noicon,
+    .tx-bbw-contacts .mail a{
+        font-weight:400;
+        /*color:#e60026;*/
+    }
+
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+    .multiple .flat-testimonials .flat-testimonials-in img {
+        width: 202px !important;
+        height: 202px !important;;
+        margin: 0 auto 25px;
+    }
+}
+
+@media (max-width:375px){
+    .contact-select select, .contact-select .selectRegion {
+        width: 65%;
+        float: left;
+    }
+    .contact-select label {
+        font-size: 15px;
+        float: left;
+        width: 29%;
+        display: block;
+    }
+}
