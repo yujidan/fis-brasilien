@@ -1,0 +1,42 @@
+        jQuery(document).ready(function() {
+            App.init();
+            FancyBox.initFancybox();
+            RevolutionSlider.initRSfullWidth();
+
+        });    /* mobile Slideroverlay Mindesthöhe (sonst verrutschen Nav-Dots bei untersch. Höhe) */
+        $(window).load(function() {
+            // Min-Höhe für Slideroverlay
+            if($(window).width() < 768){
+                var overlayHeight = 0;
+                for(var i=0; i<$(".slideroverlay").length; i++){
+                    if($($(".slideroverlay")[i]).height() > overlayHeight)
+                        overlayHeight = $($(".slideroverlay")[i]).height();
+                }
+                $(".slideroverlay").css("min-height", overlayHeight+32);
+            }
+            else
+                $(".slideroverlay").css("min-height", 0);
+
+        });
+
+        /* bei fullwidth Slider Overlay ausrichten */
+        function sliderOverlayAusrichten(){
+            if($(".mainslider.full .slideroverlay")[0]){
+                if(window.innerWidth > 1200){
+                    var newLeft = (window.innerWidth-1220)/2 +140;
+                    $(".mainslider.full .slideroverlay").css("left", newLeft);
+
+                    $(".mainslider.full .flex-control-nav").css("left", newLeft+40);
+                }
+                else if(window.innerWidth > 991)
+                {
+                    var newLeft = (window.innerWidth-970)/2 +40;
+                    $(".mainslider.full .slideroverlay").css("left", newLeft);
+
+                    $(".mainslider.full .flex-control-nav").css("left", newLeft+40);
+                }
+            }
+        }
+
+        $(window).load(function() {sliderOverlayAusrichten();});
+        window.onresize = function(){sliderOverlayAusrichten();};

@@ -1,0 +1,81 @@
+var FancyBox = function () {
+
+    return {
+
+        //Fancybox
+        initFancybox: function () {
+            jQuery(".fancybox").fancybox({
+                groupAttr: 'data-rel',
+                prevEffect: 'fade',
+                nextEffect: 'fade',
+                openEffect  : 'elastic',
+                closeEffect  : 'fade',
+                fitToView   : true,
+                closeBtn: true,
+                navigation     : true,
+                helpers: {
+                    title: {
+                        type: 'float'
+                    }
+                }
+            });
+
+            $(".fbox-modal").fancybox({
+                maxWidth    : 800,
+                maxHeight   : 600,
+                fitToView   : false,
+                width       : '70%',
+                height      : '70%',
+                autoSize    : false,
+                closeClick  : false,
+                closeEffect : 'fade',
+                openEffect  : 'elastic'
+            });
+
+        }
+
+    };
+
+}();
+
+/* Cookies setzen, abfragen, löschen (erster Webseitenaufruf?) */
+
+function setCookie(cname, cvalue) {
+    var date = new Date();
+    date.setTime(date.getTime()+(365*24*60*60*1000));
+    document.cookie = cname + "=" + cvalue + "; expires=" + date.toGMTString() + ";path=/";
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+function deleteCookie(cname) {
+    setCookie(cname,"",-1);
+}
+
+// zeig beim ersten Webseitenaufruf die Hinweisbox an
+jQuery(document).ready(function() {
+    //deleteCookie("showOverlay");
+    var showOverlay = getCookie("showOverlay");
+    // console.log(showOverlay);
+    if (showOverlay == "" || showOverlay == null) {
+        setCookie("showOverlay", "true");
+        jQuery(".splash-overlay").addClass("open");
+        jQuery(".splash-overlay .modal").css("display","block");
+        jQuery('.splash-overlay .modal').animate({opacity: 1.0}, 600);
+    }
+});
+
+// bei Klick auf x im Overlay dieses schließen
+jQuery(document).on("click", ".splash-overlay .close-modal", function(){
+    jQuery('.splash-overlay .modal').animate({opacity: 0}, 600).fadeOut(100, function() {
+        jQuery(this).css("display","none");
+        jQuery(".splash-overlay").removeClass("open");
+    });
+});
